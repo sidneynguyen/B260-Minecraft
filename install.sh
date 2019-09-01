@@ -13,7 +13,6 @@ server_files=(
 )
 
 for server_file in "${server_files[@]}"; do
-    mv $server_file $server_dir
-    chmod u+x "$server_dir/$server_file"
+    cp $server_file $server_dir
     echo "Installed $server_file to $server_dir"
 done
