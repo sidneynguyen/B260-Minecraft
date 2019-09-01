@@ -2,7 +2,7 @@
 
 current_date=`date +"%Y-%m-%d-%H"`
 
-world_archive="$current_date.tar.gz"
+world_archive="world-$current_date.tar.gz"
 
 if [ ! -f $world_archive ]; then
     tar -czvf $world_archive world
